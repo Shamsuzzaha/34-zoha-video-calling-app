@@ -105,6 +105,7 @@ const Contacts: React.FC = () => {
                               </div>
                               <div>
                                 <h3 className="font-semibold">{contact.displayName}</h3>
+                                <p className="text-sm text-gray-600">{contact.email}</p>
                                 <div className="flex items-center gap-1 text-sm">
                                   <span className={`h-2 w-2 rounded-full ${isOnline ? 'bg-green-500' : 'bg-gray-400'}`}></span>
                                   <span className={isOnline ? 'text-green-600' : 'text-gray-500'}>
@@ -196,6 +197,7 @@ const Contacts: React.FC = () => {
                           </div>
                           <div>
                             <h3 className="font-semibold">{user.displayName}</h3>
+                            <p className="text-sm text-gray-600">{user.email}</p>
                             <div className="flex items-center gap-1 text-green-600 text-xs">
                               <span className="h-2 w-2 bg-green-500 rounded-full"></span>
                               <span>Online</span>
