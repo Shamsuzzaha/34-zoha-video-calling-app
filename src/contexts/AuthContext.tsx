@@ -9,7 +9,10 @@ import {
   signInWithPopup,
   updateProfile
 } from 'firebase/auth';
+import { getFirestore, doc, setDoc } from 'firebase/firestore';
 import { auth, googleProvider } from '@/lib/firebase';
+
+const db = getFirestore();
 import { useToast } from '@/components/ui/use-toast';
 
 interface AuthContextType {
@@ -48,9 +51,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signUp = async (email: string, password: string, displayName: string) => {
     try {
-      const result = await createUserWithEmailAndPassword(auth, email, password);
+      const result = await createUserWithEmailAndPassword(auth, email.toLowerCase(), password);
       if (result.user) {
         await updateProfile(result.user, { displayName });
+        
+        // Store user data in Firestore
+        const userRef = doc(db, 'users', result.user.uid);
+        await setDoc(userRef, {
+          email: email.toLowerCase(),
+          displayName,
+          photoURL: result.user.photoURL,
+          createdAt: new Date()
+        });
+
         toast({
           title: "Account created!",
           description: "You've successfully signed up for Telezyne.",

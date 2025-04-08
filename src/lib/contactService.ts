@@ -17,7 +17,9 @@ export const addContact = async (contactEmail: string) => {
   if (!auth.currentUser) throw new Error('User must be authenticated');
 
   const usersRef = collection(db, 'users');
-  const q = query(usersRef, where('email', '==', contactEmail));
+  // Convert email to lowercase for case-insensitive comparison
+  const normalizedEmail = contactEmail.toLowerCase();
+  const q = query(usersRef, where('email', '==', normalizedEmail));
   const querySnapshot = await getDocs(q);
 
   if (querySnapshot.empty) {
