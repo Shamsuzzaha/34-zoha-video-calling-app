@@ -93,7 +93,7 @@ zoha-video-call/
 
 ## 📸 Screenshots
 
-
+![ZohaCall Screenshot](https://zohajs.vercel.app/images/projects/zohaCall.png)
 ---
 
 ## 🔒 License
