@@ -68,10 +68,10 @@ const MobileNavigation = () => {
         <div className="flex flex-col h-full bg-white">
           <div className="p-4 border-b border-gray-200 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-md bg-gradient-to-r from-telezyne-blue to-telezyne-purple flex items-center justify-center text-white font-bold">
-                T
+              <div className="h-8 w-8 rounded-md bg-gradient-to-r from-zohacall-blue to-zohacall-purple flex items-center justify-center text-white font-bold">
+                Z
               </div>
-              <span className="font-bold text-lg">Telezyne</span>
+              <span className="font-bold text-lg">ZohaCall</span>
             </div>
             <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
               <X className="h-5 w-5" />
@@ -87,7 +87,7 @@ const MobileNavigation = () => {
                     className={({ isActive }) => cn(
                       "flex items-center gap-3 px-4 py-3 rounded-md transition-colors",
                       isActive 
-                        ? "bg-telezyne-blue text-white" 
+                        ? "bg-zohacall-blue text-white" 
                         : "hover:bg-gray-100 text-gray-700"
                     )}
                   >
@@ -120,7 +120,7 @@ const DesktopNavigation = () => {
                   className={({ isActive }) => cn(
                     "flex items-center gap-3 px-4 py-3 rounded-md transition-colors",
                     isActive 
-                      ? "bg-telezyne-blue text-white" 
+                      ? "bg-zohacall-blue text-white" 
                       : "hover:bg-gray-100 text-gray-700"
                   )}
                 >

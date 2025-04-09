@@ -37,7 +37,7 @@ export default {
           DEFAULT: '#7e57c2',
           foreground: '#ffffff'
         },
-        telezyne: {
+        zohacall: {
           blue: '#1a2b6d',
           purple: '#7e57c2',
           light: '#f8f9fa',

@@ -87,7 +87,7 @@ const Profile: React.FC = () => {
                 </div>
                 
                 <div className="pt-2">
-                  <Button type="submit" disabled={loading} className="bg-telezyne-blue hover:bg-telezyne-blue/90">
+                  <Button type="submit" disabled={loading} className="bg-zohacall-blue hover:bg-zohacall-blue/90">
                     {loading ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />

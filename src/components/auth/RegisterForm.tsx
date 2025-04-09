@@ -65,7 +65,7 @@ const RegisterForm = () => {
     <Card className="w-full max-w-md shadow-lg">
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
-        <CardDescription>Enter your information to create a Telezyne account</CardDescription>
+        <CardDescription>Enter your information to create a ZohaCall account</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -124,7 +124,7 @@ const RegisterForm = () => {
           {error && <p className="text-destructive text-sm">{error}</p>}
           <Button 
             type="submit" 
-            className="w-full bg-telezyne-blue hover:bg-blue-800"
+            className="w-full bg-zohacall-blue hover:bg-blue-800"
             disabled={loading}
           >
             {loading ? (
@@ -170,7 +170,7 @@ const RegisterForm = () => {
       </CardContent>
       <CardFooter>
         <p className="text-sm text-center w-full">
-          Already have an account? <Link to="/login" className="text-telezyne-purple font-semibold hover:underline">Sign in</Link>
+          Already have an account? <Link to="/login" className="text-zohacall-purple font-semibold hover:underline">Sign in</Link>
         </p>
       </CardFooter>
     </Card>

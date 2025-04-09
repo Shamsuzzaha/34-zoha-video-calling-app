@@ -28,10 +28,10 @@ const Navbar: React.FC = () => {
     <header className="bg-white border-b border-gray-200 py-3 px-4 flex items-center justify-between shadow-sm">
       <Link to="/dashboard" className="flex items-center">
         <div className="flex items-center gap-2">
-          <div className="h-10 w-10 rounded-md bg-gradient-to-r from-telezyne-blue to-telezyne-purple flex items-center justify-center text-white font-bold text-lg">
-            T
+          <div className="h-10 w-10 rounded-md bg-gradient-to-r from-zohacall-blue to-zohacall-purple flex items-center justify-center text-white font-bold text-lg">
+            Z
           </div>
-          <h1 className="text-xl font-bold text-telezyne-blue">Telezyne</h1>
+          <h1 className="text-xl font-bold text-zohacall-blue">ZohaCall</h1>
         </div>
       </Link>
       

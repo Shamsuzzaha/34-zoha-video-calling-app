@@ -24,7 +24,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
 
   return (
     <CallProvider>
-      <div className="min-h-screen bg-telezyne-light flex flex-col">
+      <div className="min-h-screen bg-zohacall-light flex flex-col">
         <Navbar />
         <div className="flex flex-1 overflow-hidden">
           <Sidebar />

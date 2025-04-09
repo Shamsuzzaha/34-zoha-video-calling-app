@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium flex items-center gap-2">
-                <User className="w-5 h-5 text-telezyne-blue" />
+                <User className="w-5 h-5 text-zohacall-blue" />
                 My Profile
               </CardTitle>
             </CardHeader>
@@ -59,7 +59,7 @@ const Dashboard: React.FC = () => {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium flex items-center gap-2">
-                <Video className="w-5 h-5 text-telezyne-purple" />
+                <Video className="w-5 h-5 text-zohacall-purple" />
                 Quick Video Call
               </CardTitle>
             </CardHeader>
@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
                 Start a video call with someone in your contacts
               </p>
               <Link to="/call">
-                <Button className="w-full bg-telezyne-purple hover:bg-telezyne-purple/90">
+                <Button className="w-full bg-zohacall-purple hover:bg-zohacall-purple/90">
                   Start Video Call
                 </Button>
               </Link>
@@ -78,7 +78,7 @@ const Dashboard: React.FC = () => {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium flex items-center gap-2">
-                <History className="w-5 h-5 text-telezyne-blue" />
+                <History className="w-5 h-5 text-zohacall-blue" />
                 Recent Calls
               </CardTitle>
             </CardHeader>
@@ -128,7 +128,7 @@ const Dashboard: React.FC = () => {
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-medium flex items-center gap-2">
-                  <Users className="w-5 h-5 text-telezyne-blue" />
+                  <Users className="w-5 h-5 text-zohacall-blue" />
                   Online Users ({onlineUsers.length})
                 </CardTitle>
               </CardHeader>
@@ -171,17 +171,17 @@ const Dashboard: React.FC = () => {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader className="pb-2">
-                <CardTitle>Welcome to Telezyne</CardTitle>
+                <CardTitle>Welcome to ZohaCall</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-br from-telezyne-blue to-telezyne-purple rounded-lg p-5 text-white">
+                  <div className="bg-gradient-to-br from-zohacall-blue to-zohacall-purple rounded-lg p-5 text-white">
                     <h3 className="text-lg font-semibold mb-2">Start Video Calling</h3>
                     <p className="text-sm opacity-90 mb-4">
                       Connect with colleagues, friends, and family through high-quality video calls.
                     </p>
                     <Link to="/call">
-                      <Button variant="outline" className="border-white text-white hover:bg-white/20 hover:text-white">
+                      <Button variant="outline" className="border-white text-black hover:bg-white/20 hover:text-white">
                         <Video className="mr-2 h-4 w-4" />
                         Start Now
                       </Button>

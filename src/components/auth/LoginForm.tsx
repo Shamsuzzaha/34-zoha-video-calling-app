@@ -52,7 +52,7 @@ const LoginForm = () => {
   return (
     <Card className="w-full max-w-md shadow-lg">
       <CardHeader className="space-y-1">
-        <CardTitle className="text-2xl font-bold">Sign in to Telezyne</CardTitle>
+        <CardTitle className="text-2xl font-bold">Sign in to ZohaCall</CardTitle>
         <CardDescription>Enter your email and password to access your account</CardDescription>
       </CardHeader>
       <CardContent>
@@ -86,7 +86,7 @@ const LoginForm = () => {
           {error && <p className="text-destructive text-sm">{error}</p>}
           <Button 
             type="submit" 
-            className="w-full bg-telezyne-blue hover:bg-blue-800"
+            className="w-full bg-zohacall-blue hover:bg-blue-800"
             disabled={loading}
           >
             {loading ? (
@@ -132,7 +132,7 @@ const LoginForm = () => {
       </CardContent>
       <CardFooter>
         <p className="text-sm text-center w-full">
-          Don't have an account? <Link to="/register" className="text-telezyne-purple font-semibold hover:underline">Sign up</Link>
+          Don't have an account? <Link to="/register" className="text-zohacall-purple font-semibold hover:underline">Sign up</Link>
         </p>
       </CardFooter>
     </Card>
