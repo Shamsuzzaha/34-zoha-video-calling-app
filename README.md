@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
+# 📞 ZohaCall - Video Calling App
 
-## Project info
+ZohaCall is a real-time video calling web application built with **WebRTC**, **Socket.io**, and the **MERN stack**. It enables peer-to-peer video and audio communication with modern design and smooth performance.
 
-**URL**: https://lovable.dev/projects/725d232e-b8d5-49ce-8868-b0e11ade825c
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- ✅ Real-time one-on-one video calling
+- ✅ Peer-to-peer WebRTC connections
+- ✅ Socket.io-based signaling server
+- ✅ Call accept/reject UI
+- ✅ Unique user IDs for direct calling
+- ✅ Copy/share call links
+- ✅ Responsive and modern UI
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/725d232e-b8d5-49ce-8868-b0e11ade825c) and start prompting.
+## 🛠 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Layer       | Tech Used                         |
+|-------------|-----------------------------------|
+| Frontend    | React, Tailwind CSS, Socket.io-client |
+| Backend     | Node.js, Express, Socket.io       |
+| Peer-to-Peer| WebRTC                            |
+| Optional DB | MongoDB / Firebase (for auth/logs)|
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+git clone https://github.com/your-username/zoha-video-call.git
+cd zoha-video-call
+```
 
-Follow these steps:
+### 🔧 Set up Environment
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Create a `.env` file in the root with the following:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```env
+PORT=5000
+CLIENT_URL=http://localhost:3000
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+> If using Auth or Pusher, include those variables here as well.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+### ▶️ Start Development Servers
+
+**Backend**
+```bash
+cd server
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Frontend**
+```bash
+cd client
+npm install
+npm run dev
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🧪 How It Works
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. A user visits the app and gets a unique **peer ID**
+2. They enter or share another peer's ID to start a call
+3. The app uses **Socket.io** to exchange offer/answer + ICE candidates
+4. **WebRTC** establishes a direct media stream between users
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📁 Folder Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+zoha-video-call/
+├── client/          # React frontend
+│   ├── src/
+│   ├── components/
+│   └── App.jsx
+├── server/          # Express + Socket.io backend
+│   ├── index.js
+│   └── socket.js
+├── .env
+└── README.md
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/725d232e-b8d5-49ce-8868-b0e11ade825c) and click on Share -> Publish.
+## 📸 Screenshots
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes it is!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔒 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT License. Free to use and modify.
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by Shamsuzzaha Sumon
+📧 `shamsuzzahasumon@gmail.com`
+
+---
+
+## 🌐 Live Demo
+
+ [https://video-call-zohajs.vercel.app](https://video-call-zohajs.vercel.app)
+
+---
+
+## ✨ Future Plans
+
+- ✅ Group video calls
+- ✅ Chat during call
+- ✅ Firebase login or OTP-based auth
+- ✅ Call history log (MongoDB)
+
+---
