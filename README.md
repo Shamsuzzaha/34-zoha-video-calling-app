@@ -16,7 +16,7 @@ ZohaCall is a real-time video calling web application built with **WebRTC**, **S
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack    
 
 | Layer       | Tech Used                         |
 |-------------|-----------------------------------|
